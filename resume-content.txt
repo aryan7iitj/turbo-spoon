@@ -1,0 +1,93 @@
+
+
+Aryan Himmatlal Prajapati+91-8160612605
+B.Tech.prajapati.5@iitj.ac.in
+Electrical EngineeringGithub
+Indian Institute of Technology JodhpurLinkedIn
+Education
+Degree/CertificateInstitute/BoardCGPA/PercentageYear
+B.Tech.Indian Institute of Technology Jodhpur7.78 (Current)2021-Present
+Senior SecondaryGSHSEB, Gandhinagar89.23%2021
+SecondaryGSHSEB, Gandhinagar93.50%2019
+Experience
+•
+Decimal Point AnalyticsMay 2024 - Jul. 2024
+Software Development InternMumbai, India
+–Extracted data from mutual fund prospectuses using pdfplumber, SpaCy NER, and regex.
+–Built a trading strategy backtesting app using Streamlit, containerized with Docker, and automated with Jenkins.
+–Developed chatbot frontend with React, managing state and styling with custom CSS.
+•
+NextGen VenturesJun. 2023 - Oct. 2024
+Machine Learning Engineering InternSan Francisco, United States
+–Developed and productionized an ML model under the guidance of the CEO and CTO.
+–Built a Food Recommender System to reduce food ordering time, addressing cold start problems.
+–Created a Recommender System suggesting Top K Cuisines for users, using industry research and public datasets.
+•
+Jio Platforms LimitedJun. 2023 - Aug. 2023
+Summer InternHyderabad, India
+–Developed a Network Data Capturing App to capture download/upload speeds and location.
+–Worked on Crowd-Sourced Network Coverage Mapping and NL Interface for Enterprise Data.
+–Built a model to extract text from images using EasyOCR, PyTesseract, and Langchain.
+Publications
+1. Aryan Prajapati, Jyoti Dhayal and Dr. Nishant Kumar “A BMS Enabled Tracking Technique for Isolated Solar
+Based Charging Infrastructure”, 2023 IEEE 3rd International Conference on Smart Technologies for Power, Energy and
+Control (STPEC), Bhubaneswar, India (Accepted, Link to Publication)
+2. Aryan Prajapati, Tarun Raj Singh and Dr. Nishant Kumar "Credit Card Fraud Detection Using XGBoost Driven
+Oversampling Based Machine Learning Technique: For Application Such as Electricity Bill Payments", 2nd IEEE
+Industrial Electronics Society Annual Online Conference(IES ONCON 2023)(Accepted, Proof)
+3. Aryan Prajapati, Tarun Raj Singh and Dr. Nishant Kumar “Dynamic Payback Period Estimation for Solar Power
+Plants Through ML Based Solar Generation Forecasts,” 6th IEEE International Conference on Systems, Computation,
+Automation and Networking (ICSCAN 2024), Puducherry, India (Accepted, Proof)
+4. Aryan Prajapati, Tarun Raj Singh, Jyoti Dhayal and Dr. Nishant Kumar “Optimized Solar Power Generation
+Forecasting: A Novel ML Approach with Sequential Hyperparameter Tuning and Trend Adaptation”, submitted in 2nd
+IEEE International Conference on Computational Intelligence, Communication Technology and Networking
+(CICTN2025), Ghaziabad, India.
+Projects
+•
+NEURAL NETWORKS FOR MicroControllerUnit (MCUNet)Mar. 2024 - Apr. 2024
+C++, Python, TensorflowReport
+–Implemented neural network on the STM32F429ZI – Discovery board to detect electrical fault
+–It is a highly resource constrained device which provides only 32KB of memory declare variables or weights.
+•
+Trading Strategy Backtesting AppMay 2024 - Jun. 2024
+Python, Pandas, Matplotlib, Streamlit, BacktestingLive App | Github
+–Created a Streamlit app for backtesting various trading strategies such as SMA, EMA, Bollinger Bands, RSI etc.
+–Implemented backtesting logic for multiple trading strategies using Python and the backtesting library.
+•
+Top-K Cuisines Recommender SystemDec. 2023 - Jan. 2024
+Python, Pandas, NumPyGithub
+–Developed a recommendation system for top-K cuisines using Jaccard similarity and Manhattan distance.
+–Implemented weighted scoring to combine user attributes for personalized cuisine recommendations.
+•
+Brain Stroke Prediction ProjectMar. 2023 - Apr. 2023
+HTML, CSS, Javascript, Python, Data Processing, XGBoost, SMOTELive App | Github
+–Developed a stroke prediction ML pipeline with 100% accuracy using custom sampling and boosting.
+–Enhanced classifier performance on imbalanced datasets using undersampling, oversampling, and SMOTE.
+
+Skills
+•
+Core Competencies:DSA, AI/ML, DBMS, Web/App Dev., CI/CD Pipelines, Automation, NLP
+•
+Programming:Python, C, C++, SQL, Javascript
+•
+Libraries and Frameworks:Pandas, NumPy, Matplotlib, Scikit-learn, TensorFlow, PyTorch, FastAPI, Django
+•
+DevOps and Version Control:Docker, Jenkins, Git
+Achievements
+•LinkedIn Recommendation: Recognized by Head of AI/ML, Instagram Creators for developing a food recommender
+system.
+•Campus Innovation Challenge: Won at IIT Jodhpur; awarded by Secretary, Ministry of Health & Family Welfare
+and IIT Jodhpur Director.
+•Engineering Design Project Presentation: Presented project to Former ISRO SAC Director, IIT Jodhpur Director,
+and BITS Pilani Vice Chancellor on IIT Jodhpur’s Foundation Day.
+•TVS Credit E.P.I.C 5.0 Analytics Challenge: Ranked among Top 160 out of 18,313 participants.
+•CodeChef December Long Challenge 2022: Achieved Global Rank 41.
+Extracurricular
+•
+General Secretary of Hostel Affairs,G1 Hostel, IIT Jodhpur
+•
+Adminstration Team Member,Office of International Relations, IIT Jodhpur
+•
+Department UG Committee member,Department of Electrical Engineering, IIT Jodhpur
+•
+Assistant Head, Finance Team,Varchas Annual Sports Fest, IIT Jodhpur
