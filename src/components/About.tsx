@@ -89,7 +89,7 @@ const About = () => {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                 <FaGraduationCap style={{ color: '#a855f7' }} />
-                <span style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '0.9rem' }}>B.Tech Electrical Engineering at IIT Jodhpur</span>
+                <span style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '0.9rem' }}>B.Tech Electrical Engineering from IIT Jodhpur (2025)</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                 <FaTrophy style={{ color: '#ec4899' }} />
@@ -770,19 +770,19 @@ const About = () => {
               animation: 'shimmer 3s infinite',
               pointerEvents: 'none'
             }} />
-            <FaUniversity style={{ fontSize: '2.5rem', color: '#a855f7', marginBottom: '0.75rem' }} />
-            <h3 style={{ color: 'white', fontSize: '1.25rem', marginBottom: '0.25rem' }}>B.Tech Electrical Engineering</h3>
-            <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '1rem', marginBottom: '0.75rem' }}>Indian Institute of Technology Jodhpur</p>
+            <FaGraduationCap style={{ fontSize: '2.5rem', color: '#a855f7', marginBottom: '0.75rem' }} />
+            <h3 style={{ color: 'white', fontSize: '1.25rem', marginBottom: '0.25rem' }}>Senior Secondary</h3>
+            <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '1rem', marginBottom: '0.75rem' }}>GSHSEB, Gandhinagar</p>
             <div style={{
               background: 'rgba(255, 255, 255, 0.1)',
               padding: '0.75rem',
               borderRadius: '0.5rem',
               marginBottom: '0.75rem'
             }}>
-              <div style={{ fontSize: '1.75rem', fontWeight: 900, color: '#a855f7', marginBottom: '0.25rem' }}>7.78</div>
-              <div style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '0.8rem' }}>Current CGPA</div>
+              <div style={{ fontSize: '1.75rem', fontWeight: 900, color: '#a855f7', marginBottom: '0.25rem' }}>89.23%</div>
+              <div style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '0.8rem' }}>Percentage</div>
             </div>
-            <p style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '0.8rem' }}>2021 - Present</p>
+            <p style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '0.8rem' }}>2021</p>
           </div>
           
           <div style={{
@@ -815,19 +815,19 @@ const About = () => {
               animation: 'shimmer 3s infinite',
               pointerEvents: 'none'
             }} />
-            <FaGraduationCap style={{ fontSize: '2.5rem', color: '#3b82f6', marginBottom: '0.75rem' }} />
-            <h3 style={{ color: 'white', fontSize: '1.25rem', marginBottom: '0.25rem' }}>Senior Secondary</h3>
-            <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '1rem', marginBottom: '0.75rem' }}>GSHSEB, Gandhinagar</p>
+            <FaUniversity style={{ fontSize: '2.5rem', color: '#3b82f6', marginBottom: '0.75rem' }} />
+            <h3 style={{ color: 'white', fontSize: '1.25rem', marginBottom: '0.25rem' }}>B.Tech Electrical Engineering</h3>
+            <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '1rem', marginBottom: '0.75rem' }}>Indian Institute of Technology Jodhpur</p>
             <div style={{
               background: 'rgba(255, 255, 255, 0.1)',
               padding: '0.75rem',
               borderRadius: '0.5rem',
               marginBottom: '0.75rem'
             }}>
-              <div style={{ fontSize: '1.75rem', fontWeight: 900, color: '#3b82f6', marginBottom: '0.25rem' }}>89.23%</div>
-              <div style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '0.8rem' }}>Percentage</div>
+              <div style={{ fontSize: '1.75rem', fontWeight: 900, color: '#3b82f6', marginBottom: '0.25rem' }}>7.95</div>
+              <div style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '0.8rem' }}>CGPA</div>
             </div>
-            <p style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '0.8rem' }}>2021</p>
+            <p style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '0.8rem' }}>2021 - 2025</p>
           </div>
           
           <div style={{

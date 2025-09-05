@@ -8,22 +8,31 @@ export default function Navbar() {
   useEffect(() => {
     const observerOptions = {
       root: null,
-      rootMargin: '-20% 0px -70% 0px', // Adjust these values to control when a section is considered "active"
-      threshold: 0
+      rootMargin: '-5% 0px -50% 0px', // More sensitive to section changes
+      threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
     };
 
     const observer = new IntersectionObserver((entries) => {
+      // Find the section with the highest intersection ratio
+      let mostVisibleSection = null;
+      let highestRatio = 0;
+      
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          // Only set active section if we're not at the very top (Hero section)
-          const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-          if (scrollTop > 100) { // Threshold to avoid Hero section
-            setActiveSection(entry.target.id);
-          } else {
-            setActiveSection(''); // Clear active section when at top
-          }
+        if (entry.isIntersecting && entry.intersectionRatio > highestRatio) {
+          highestRatio = entry.intersectionRatio;
+          mostVisibleSection = entry.target.id;
         }
       });
+      
+      if (mostVisibleSection) {
+        // Only set active section if we're not at the very top (Hero section)
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > 100) { // Threshold to avoid Hero section
+          setActiveSection(mostVisibleSection);
+        } else {
+          setActiveSection(''); // Clear active section when at top
+        }
+      }
     }, observerOptions);
 
     // Observe all sections
@@ -65,12 +74,31 @@ export default function Navbar() {
       else if (sectionId === 'projects') {
         navbarHeight = -40; // Increase offset for Projects section to account for title margin
       }
+      else if (sectionId === 'contact') {
+        navbarHeight = -10; // Adjust offset for Contact section
+      }
       
       const elementPosition = element.offsetTop - navbarHeight;
+      
+      // Immediately update the active section when button is clicked
+      setActiveSection(sectionId);
+      
       window.scrollTo({
         top: elementPosition,
         behavior: 'smooth'
       });
+      
+      // Force verification after scroll completes
+      setTimeout(() => {
+        const targetElement = document.getElementById(sectionId);
+        if (targetElement) {
+          const rect = targetElement.getBoundingClientRect();
+          const isVisible = rect.top <= window.innerHeight * 0.6 && rect.bottom >= window.innerHeight * 0.1;
+          if (isVisible) {
+            setActiveSection(sectionId);
+          }
+        }
+      }, 800);
     }
   };
 
@@ -139,9 +167,9 @@ export default function Navbar() {
                   e.currentTarget.style.color = 'rgba(255, 255, 255, 0.8)';
                   e.currentTarget.style.transform = 'translateY(0)';
                   e.currentTarget.style.filter = 'none';
+                  const underline = e.currentTarget.querySelector('.button-underline') as HTMLElement;
+                  if (underline) underline.style.left = '-100%';
                 }
-                const underline = e.currentTarget.querySelector('.button-underline') as HTMLElement;
-                if (underline) underline.style.left = '-100%';
               }}
             >
               <span style={{ position: 'relative', zIndex: 1 }}>About Me</span>
@@ -177,9 +205,9 @@ export default function Navbar() {
                   e.currentTarget.style.color = 'rgba(255, 255, 255, 0.8)';
                   e.currentTarget.style.transform = 'translateY(0)';
                   e.currentTarget.style.filter = 'none';
+                  const underline = e.currentTarget.querySelector('.button-underline') as HTMLElement;
+                  if (underline) underline.style.left = '-100%';
                 }
-                const underline = e.currentTarget.querySelector('.button-underline') as HTMLElement;
-                if (underline) underline.style.left = '-100%';
               }}
             >
               <span style={{ position: 'relative', zIndex: 1 }}>What I Know</span>
@@ -215,9 +243,9 @@ export default function Navbar() {
                   e.currentTarget.style.color = 'rgba(255, 255, 255, 0.8)';
                   e.currentTarget.style.transform = 'translateY(0)';
                   e.currentTarget.style.filter = 'none';
+                  const underline = e.currentTarget.querySelector('.button-underline') as HTMLElement;
+                  if (underline) underline.style.left = '-100%';
                 }
-                const underline = e.currentTarget.querySelector('.button-underline') as HTMLElement;
-                if (underline) underline.style.left = '-100%';
               }}
             >
               <span style={{ position: 'relative', zIndex: 1 }}>My Work</span>
@@ -253,9 +281,9 @@ export default function Navbar() {
                   e.currentTarget.style.color = 'rgba(255, 255, 255, 0.8)';
                   e.currentTarget.style.transform = 'translateY(0)';
                   e.currentTarget.style.filter = 'none';
+                  const underline = e.currentTarget.querySelector('.button-underline') as HTMLElement;
+                  if (underline) underline.style.left = '-100%';
                 }
-                const underline = e.currentTarget.querySelector('.button-underline') as HTMLElement;
-                if (underline) underline.style.left = '-100%';
               }}
             >
               <span style={{ position: 'relative', zIndex: 1 }}>Connect</span>
