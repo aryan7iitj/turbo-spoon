@@ -22,12 +22,34 @@ export default function Skills() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
             {/* Core Competencies */}
             <div style={{
-              background: 'rgba(255, 255, 255, 0.1)',
+              background: 'linear-gradient(135deg, rgba(168, 85, 247, 0.2), rgba(236, 72, 153, 0.2))',
               borderRadius: '1rem',
               padding: '2rem',
-              backdropFilter: 'blur(10px)',
-              border: '1px solid rgba(255, 255, 255, 0.1)'
-            }}>
+              border: '1px solid rgba(255, 255, 255, 0.1)',
+              transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+              position: 'relative',
+              overflow: 'hidden'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-8px) scale(1.02)';
+              e.currentTarget.style.boxShadow = '0 20px 40px rgba(168, 85, 247, 0.3)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0) scale(1)';
+              e.currentTarget.style.boxShadow = 'none';
+            }}
+            >
+              <div style={{
+                position: 'absolute',
+                top: '-50%',
+                left: '-50%',
+                width: '200%',
+                height: '200%',
+                background: 'linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent)',
+                transform: 'rotate(45deg)',
+                animation: 'shimmer 3s infinite',
+                pointerEvents: 'none'
+              }} />
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.5rem' }}>
                 <FaRocket style={{ fontSize: '2rem', color: '#a855f7' }} />
                 <h3 style={{ color: 'white', fontSize: '1.5rem', fontWeight: 700 }}>Core Competencies</h3>
@@ -122,12 +144,34 @@ export default function Skills() {
 
             {/* Programming Languages */}
             <div style={{
-              background: 'rgba(255, 255, 255, 0.1)',
+              background: 'linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(6, 182, 212, 0.2))',
               borderRadius: '1rem',
               padding: '2rem',
-              backdropFilter: 'blur(10px)',
-              border: '1px solid rgba(255, 255, 255, 0.1)'
-            }}>
+              border: '1px solid rgba(255, 255, 255, 0.1)',
+              transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+              position: 'relative',
+              overflow: 'hidden'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-8px) scale(1.02)';
+              e.currentTarget.style.boxShadow = '0 20px 40px rgba(59, 130, 246, 0.3)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0) scale(1)';
+              e.currentTarget.style.boxShadow = 'none';
+            }}
+            >
+              <div style={{
+                position: 'absolute',
+                top: '-50%',
+                left: '-50%',
+                width: '200%',
+                height: '200%',
+                background: 'linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent)',
+                transform: 'rotate(45deg)',
+                animation: 'shimmer 3s infinite',
+                pointerEvents: 'none'
+              }} />
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.5rem' }}>
                 <FaCode style={{ fontSize: '2rem', color: '#3b82f6' }} />
                 <h3 style={{ color: 'white', fontSize: '1.5rem', fontWeight: 700 }}>Programming Languages</h3>
@@ -198,12 +242,34 @@ export default function Skills() {
 
             {/* Libraries and Frameworks */}
             <div style={{
-              background: 'rgba(255, 255, 255, 0.1)',
+              background: 'linear-gradient(135deg, rgba(34, 197, 94, 0.2), rgba(16, 185, 129, 0.2))',
               borderRadius: '1rem',
               padding: '2rem',
-              backdropFilter: 'blur(10px)',
-              border: '1px solid rgba(255, 255, 255, 0.1)'
-            }}>
+              border: '1px solid rgba(255, 255, 255, 0.1)',
+              transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+              position: 'relative',
+              overflow: 'hidden'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-8px) scale(1.02)';
+              e.currentTarget.style.boxShadow = '0 20px 40px rgba(34, 197, 94, 0.3)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0) scale(1)';
+              e.currentTarget.style.boxShadow = 'none';
+            }}
+            >
+              <div style={{
+                position: 'absolute',
+                top: '-50%',
+                left: '-50%',
+                width: '200%',
+                height: '200%',
+                background: 'linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent)',
+                transform: 'rotate(45deg)',
+                animation: 'shimmer 3s infinite',
+                pointerEvents: 'none'
+              }} />
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.5rem' }}>
                 <FaCode style={{ fontSize: '2rem', color: '#ec4899' }} />
                 <h3 style={{ color: 'white', fontSize: '1.5rem', fontWeight: 700 }}>Libraries and Frameworks</h3>
@@ -310,12 +376,34 @@ export default function Skills() {
 
             {/* Web Development */}
             <div style={{
-              background: 'rgba(255, 255, 255, 0.1)',
+              background: 'linear-gradient(135deg, rgba(249, 115, 22, 0.2), rgba(251, 191, 36, 0.2))',
               borderRadius: '1rem',
               padding: '2rem',
-              backdropFilter: 'blur(10px)',
-              border: '1px solid rgba(255, 255, 255, 0.1)'
-            }}>
+              border: '1px solid rgba(255, 255, 255, 0.1)',
+              transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+              position: 'relative',
+              overflow: 'hidden'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-8px) scale(1.02)';
+              e.currentTarget.style.boxShadow = '0 20px 40px rgba(249, 115, 22, 0.3)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0) scale(1)';
+              e.currentTarget.style.boxShadow = 'none';
+            }}
+            >
+              <div style={{
+                position: 'absolute',
+                top: '-50%',
+                left: '-50%',
+                width: '200%',
+                height: '200%',
+                background: 'linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent)',
+                transform: 'rotate(45deg)',
+                animation: 'shimmer 3s infinite',
+                pointerEvents: 'none'
+              }} />
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.5rem' }}>
                 <FaCode style={{ fontSize: '2rem', color: '#06b6d4' }} />
                 <h3 style={{ color: 'white', fontSize: '1.5rem', fontWeight: 700 }}>Web Development</h3>
@@ -350,12 +438,34 @@ export default function Skills() {
 
             {/* DevOps and Version Control */}
             <div style={{
-              background: 'rgba(255, 255, 255, 0.1)',
+              background: 'linear-gradient(135deg, rgba(236, 72, 153, 0.2), rgba(168, 85, 247, 0.2))',
               borderRadius: '1rem',
               padding: '2rem',
-              backdropFilter: 'blur(10px)',
-              border: '1px solid rgba(255, 255, 255, 0.1)'
-            }}>
+              border: '1px solid rgba(255, 255, 255, 0.1)',
+              transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+              position: 'relative',
+              overflow: 'hidden'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-8px) scale(1.02)';
+              e.currentTarget.style.boxShadow = '0 20px 40px rgba(236, 72, 153, 0.3)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0) scale(1)';
+              e.currentTarget.style.boxShadow = 'none';
+            }}
+            >
+              <div style={{
+                position: 'absolute',
+                top: '-50%',
+                left: '-50%',
+                width: '200%',
+                height: '200%',
+                background: 'linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent)',
+                transform: 'rotate(45deg)',
+                animation: 'shimmer 3s infinite',
+                pointerEvents: 'none'
+              }} />
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.5rem' }}>
                 <FaCogs style={{ fontSize: '2rem', color: '#8b5cf6' }} />
                 <h3 style={{ color: 'white', fontSize: '1.5rem', fontWeight: 700 }}>DevOps and Version Control</h3>

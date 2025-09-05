@@ -21,13 +21,34 @@ export default function Projects() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '2rem' }}>
             {/* Project 1 - NEURAL NETWORKS FOR MicroControllerUnit (MCUNet) */}
             <div style={{
-              background: 'rgba(255, 255, 255, 0.1)',
+              background: 'linear-gradient(135deg, rgba(168, 85, 247, 0.2), rgba(236, 72, 153, 0.2))',
               borderRadius: '1rem',
               padding: '2rem',
-              backdropFilter: 'blur(10px)',
               border: '1px solid rgba(255, 255, 255, 0.1)',
-              transition: 'all 0.3s'
-            }}>
+              transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+              position: 'relative',
+              overflow: 'hidden'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-8px) scale(1.02)';
+              e.currentTarget.style.boxShadow = '0 20px 40px rgba(168, 85, 247, 0.3)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0) scale(1)';
+              e.currentTarget.style.boxShadow = 'none';
+            }}
+            >
+              <div style={{
+                position: 'absolute',
+                top: '-50%',
+                left: '-50%',
+                width: '200%',
+                height: '200%',
+                background: 'linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent)',
+                transform: 'rotate(45deg)',
+                animation: 'shimmer 3s infinite',
+                pointerEvents: 'none'
+              }} />
               <h3 style={{ color: 'white', fontSize: '1.5rem', fontWeight: 700, marginBottom: '1rem' }}>
                 NEURAL NETWORKS FOR MicroControllerUnit (MCUNet)
               </h3>
@@ -83,13 +104,34 @@ export default function Projects() {
 
             {/* Project 2 - Trading Strategy Backtesting App */}
             <div style={{
-              background: 'rgba(255, 255, 255, 0.1)',
+              background: 'linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(6, 182, 212, 0.2))',
               borderRadius: '1rem',
               padding: '2rem',
-              backdropFilter: 'blur(10px)',
               border: '1px solid rgba(255, 255, 255, 0.1)',
-              transition: 'all 0.3s'
-            }}>
+              transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+              position: 'relative',
+              overflow: 'hidden'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-8px) scale(1.02)';
+              e.currentTarget.style.boxShadow = '0 20px 40px rgba(59, 130, 246, 0.3)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0) scale(1)';
+              e.currentTarget.style.boxShadow = 'none';
+            }}
+            >
+              <div style={{
+                position: 'absolute',
+                top: '-50%',
+                left: '-50%',
+                width: '200%',
+                height: '200%',
+                background: 'linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent)',
+                transform: 'rotate(45deg)',
+                animation: 'shimmer 3s infinite',
+                pointerEvents: 'none'
+              }} />
               <h3 style={{ color: 'white', fontSize: '1.5rem', fontWeight: 700, marginBottom: '1rem' }}>
                 Trading Strategy Backtesting App
               </h3>
@@ -173,13 +215,34 @@ export default function Projects() {
 
             {/* Project 3 - Top-K Cuisines Recommender System */}
             <div style={{
-              background: 'rgba(255, 255, 255, 0.1)',
+              background: 'linear-gradient(135deg, rgba(34, 197, 94, 0.2), rgba(16, 185, 129, 0.2))',
               borderRadius: '1rem',
               padding: '2rem',
-              backdropFilter: 'blur(10px)',
               border: '1px solid rgba(255, 255, 255, 0.1)',
-              transition: 'all 0.3s'
-            }}>
+              transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+              position: 'relative',
+              overflow: 'hidden'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-8px) scale(1.02)';
+              e.currentTarget.style.boxShadow = '0 20px 40px rgba(34, 197, 94, 0.3)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0) scale(1)';
+              e.currentTarget.style.boxShadow = 'none';
+            }}
+            >
+              <div style={{
+                position: 'absolute',
+                top: '-50%',
+                left: '-50%',
+                width: '200%',
+                height: '200%',
+                background: 'linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent)',
+                transform: 'rotate(45deg)',
+                animation: 'shimmer 3s infinite',
+                pointerEvents: 'none'
+              }} />
               <h3 style={{ color: 'white', fontSize: '1.5rem', fontWeight: 700, marginBottom: '1rem' }}>
                 Top-K Cuisines Recommender System
               </h3>
@@ -235,13 +298,34 @@ export default function Projects() {
 
             {/* Project 4 - Brain Stroke Prediction Project */}
             <div style={{
-              background: 'rgba(255, 255, 255, 0.1)',
+              background: 'linear-gradient(135deg, rgba(249, 115, 22, 0.2), rgba(251, 191, 36, 0.2))',
               borderRadius: '1rem',
               padding: '2rem',
-              backdropFilter: 'blur(10px)',
               border: '1px solid rgba(255, 255, 255, 0.1)',
-              transition: 'all 0.3s'
-            }}>
+              transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+              position: 'relative',
+              overflow: 'hidden'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-8px) scale(1.02)';
+              e.currentTarget.style.boxShadow = '0 20px 40px rgba(249, 115, 22, 0.3)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0) scale(1)';
+              e.currentTarget.style.boxShadow = 'none';
+            }}
+            >
+              <div style={{
+                position: 'absolute',
+                top: '-50%',
+                left: '-50%',
+                width: '200%',
+                height: '200%',
+                background: 'linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent)',
+                transform: 'rotate(45deg)',
+                animation: 'shimmer 3s infinite',
+                pointerEvents: 'none'
+              }} />
               <h3 style={{ color: 'white', fontSize: '1.5rem', fontWeight: 700, marginBottom: '1rem' }}>
                 Brain Stroke Prediction Project
               </h3>
