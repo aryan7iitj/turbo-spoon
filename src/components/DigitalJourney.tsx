@@ -1,12 +1,12 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import { FaRocket, FaBrain, FaCode, FaGraduationCap, FaTrophy, FaUsers, FaBook, FaLightbulb, FaGlobe, FaHeart, FaStar, FaArrowRight, FaArrowLeft, FaPlay, FaPause } from 'react-icons/fa';
+import { FaRocket, FaBrain, FaCode, FaGraduationCap, FaTrophy, FaUsers, FaBook, FaLightbulb, FaGlobe, FaHeart, FaArrowRight, FaArrowLeft, FaPlay, FaPause } from 'react-icons/fa';
 import { SiPython, SiTensorflow, SiPytorch, SiReact, SiDjango, SiDocker, SiJenkins } from 'react-icons/si';
 
 const DigitalJourney = () => {
   const [currentPhase, setCurrentPhase] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [hoveredNode, setHoveredNode] = useState(null);
+  const [hoveredNode, setHoveredNode] = useState<number | null>(null);
 
   const journeyPhases = [
     {
@@ -114,7 +114,7 @@ const DigitalJourney = () => {
       content: {
         year: '2025+',
         achievement: 'Continuing the journey...',
-        description: 'Ready to tackle bigger challenges, create more impact, and push the boundaries of what\'s possible.'
+        description: 'Ready to tackle bigger challenges, create more impact, and push the boundaries of what&apos;s possible.'
       }
     }
   ];
@@ -186,7 +186,7 @@ const DigitalJourney = () => {
           backgroundClip: 'text',
           marginBottom: '1rem'
         }}>
-          Aryan's Digital Journey
+          Aryan&apos;s Digital Journey
         </h1>
         <p style={{
           fontSize: '1.25rem',
@@ -478,7 +478,7 @@ const DigitalJourney = () => {
           color: 'white',
           marginBottom: '2rem'
         }}>
-          Let's Connect & Create
+          Let&apos;s Connect & Create
         </h2>
         
         <div style={{

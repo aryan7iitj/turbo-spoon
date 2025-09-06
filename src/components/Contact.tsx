@@ -8,7 +8,7 @@ export default function Contact() {
       <section id="contact" style={{ padding: '6rem 1rem', position: 'relative' }}>
         <div style={{ maxWidth: '80rem', margin: '0 auto', position: 'relative', zIndex: 2 }}>
           <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-            <h2 style={{ fontSize: '3rem', fontWeight: 900, color: 'white', marginBottom: '1rem' }}>Let's Connect</h2>
+            <h2 style={{ fontSize: '3rem', fontWeight: 900, color: 'white', marginBottom: '1rem' }}>Let&apos;s Connect</h2>
             <div style={{
               width: '8rem',
               height: '0.5rem',
@@ -140,7 +140,7 @@ export default function Contact() {
               }} />
               <FaEnvelope style={{ fontSize: '3rem', color: '#22c55e', marginBottom: '1rem' }} />
               <h3 style={{ color: 'white', fontSize: '1.5rem', fontWeight: 700, marginBottom: '0.5rem' }}>Email</h3>
-              <p style={{ color: 'rgba(255, 255, 255, 0.7)', marginBottom: '1rem' }}>Let's discuss opportunities</p>
+              <p style={{ color: 'rgba(255, 255, 255, 0.7)', marginBottom: '1rem' }}>Let&apos;s discuss opportunities</p>
               <a href="mailto:iitj.aryan@gmail.com" style={{
                 color: '#22c55e',
                 textDecoration: 'none',
@@ -154,7 +154,7 @@ export default function Contact() {
 
           <div style={{ textAlign: 'center', marginTop: '3rem' }}>
             <p style={{ color: 'rgba(255, 255, 255, 0.6)', fontSize: '1.1rem', lineHeight: 1.6 }}>
-              I'm always open to discussing new opportunities, collaborations, or just having a chat about technology and innovation.
+              I&apos;m always open to discussing new opportunities, collaborations, or just having a chat about technology and innovation.
             </p>
           </div>
         </div>

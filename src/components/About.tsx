@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react';
-import { FaLightbulb, FaCode, FaRocket, FaGraduationCap, FaTrophy, FaUsers, FaBook, FaGlobe, FaBriefcase, FaAward, FaUniversity, FaLaptop, FaBrain } from 'react-icons/fa';
+import { FaCode, FaGraduationCap, FaTrophy, FaUsers, FaBook, FaGlobe, FaBriefcase, FaAward, FaUniversity, FaBrain } from 'react-icons/fa';
 
 const About = () => {
   const [activeTab, setActiveTab] = useState('story');
@@ -46,14 +46,14 @@ const About = () => {
               lineHeight: 1.6,
               marginBottom: '1rem'
             }}>
-              When I'm not coding or researching, you'll find me exploring sci-fi novels, experimenting with new recipes, or planning my next adventure. I believe the best solutions come from the intersection of creativity and logic.
+              When I&apos;m not coding or researching, you&apos;ll find me exploring sci-fi novels, experimenting with new recipes, or planning my next adventure. I believe the best solutions come from the intersection of creativity and logic.
             </p>
             <p style={{
               fontSize: '1.1rem',
               color: 'rgba(255, 255, 255, 0.8)',
               lineHeight: 1.6
             }}>
-              My passion lies in AI/ML, web development, and data science. I love building innovative solutions that can make a real impact in people's lives.
+              My passion lies in AI/ML, web development, and data science. I love building innovative solutions that can make a real impact in people&apos;s lives.
             </p>
           </div>
                                            <div style={{
@@ -93,7 +93,7 @@ const About = () => {
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                 <FaTrophy style={{ color: '#ec4899' }} />
-                <span style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '0.9rem' }}>Global Rank #41 in CodeChef's December Long Challenge 2022</span>
+                <span style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '0.9rem' }}>Global Rank #41 in CodeChef&apos;s December Long Challenge 2022</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                 <FaBook style={{ color: '#3b82f6' }} />
@@ -428,7 +428,7 @@ const About = () => {
             <FaAward style={{ fontSize: '2rem', color: '#ec4899', marginBottom: '0.75rem' }} />
             <h4 style={{ color: 'white', marginBottom: '0.5rem', fontSize: '1.1rem' }}>Engineering Design Project</h4>
             <p style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '0.85rem', lineHeight: 1.4 }}>
-              Presented project to Former ISRO SAC Director, IIT Jodhpur Director, and BITS Pilani Vice Chancellor on IIT Jodhpur's Foundation Day
+              Presented project to Former ISRO SAC Director, IIT Jodhpur Director, and BITS Pilani Vice Chancellor on IIT Jodhpur&apos;s Foundation Day
             </p>
           </div>
         </div>
@@ -615,7 +615,7 @@ const About = () => {
                   }} />
                   <h4 style={{ color: 'white', marginBottom: '0.25rem', fontSize: '1rem' }}>Solar Energy & BMS Tracking</h4>
                 <p style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '0.8rem', lineHeight: 1.4, marginBottom: '0.25rem' }}>
-                  "A BMS Enabled Tracking Technique for Isolated Solar Based Charging Infrastructure"
+                  &quot;A BMS Enabled Tracking Technique for Isolated Solar Based Charging Infrastructure&quot;
                 </p>
                 <p style={{ color: 'rgba(255, 255, 255, 0.6)', fontSize: '0.7rem' }}>
                   IEEE 3rd International Conference on Smart Technologies for Power, Energy and Control (STPEC) 2023, Bhubaneswar, India
@@ -652,7 +652,7 @@ const About = () => {
                   }} />
                   <h4 style={{ color: 'white', marginBottom: '0.25rem', fontSize: '1rem' }}>Credit Card Fraud Detection</h4>
                 <p style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '0.8rem', lineHeight: 1.4, marginBottom: '0.25rem' }}>
-                  "Credit Card Fraud Detection Using XGBoost Driven Oversampling Based Machine Learning Technique: For Application Such as Electricity Bill Payments"
+                  &quot;Credit Card Fraud Detection Using XGBoost Driven Oversampling Based Machine Learning Technique: For Application Such as Electricity Bill Payments&quot;
                 </p>
                 <p style={{ color: 'rgba(255, 255, 255, 0.6)', fontSize: '0.7rem' }}>
                   2nd IEEE Industrial Electronics Society Annual Online Conference (IES ONCON) 2023
@@ -689,7 +689,7 @@ const About = () => {
                   }} />
                   <h4 style={{ color: 'white', marginBottom: '0.25rem', fontSize: '1rem' }}>Solar Power Generation Forecasting</h4>
                 <p style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '0.8rem', lineHeight: 1.4, marginBottom: '0.25rem' }}>
-                  "Dynamic Payback Period Estimation for Solar Power Plants Through ML Based Solar Generation Forecasts"
+                  &quot;Dynamic Payback Period Estimation for Solar Power Plants Through ML Based Solar Generation Forecasts&quot;
                 </p>
                 <p style={{ color: 'rgba(255, 255, 255, 0.6)', fontSize: '0.7rem' }}>
                   6th IEEE International Conference on Systems, Computation, Automation and Networking (ICSCAN) 2024, Puducherry, India
@@ -726,7 +726,7 @@ const About = () => {
                   }} />
                   <h4 style={{ color: 'white', marginBottom: '0.25rem', fontSize: '1rem' }}>Optimized Solar Power Generation Forecasting</h4>
                 <p style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '0.8rem', lineHeight: 1.4, marginBottom: '0.25rem' }}>
-                  "A Novel ML Approach with Sequential Hyperparameter Tuning and Trend Adaptation"
+                  &quot;A Novel ML Approach with Sequential Hyperparameter Tuning and Trend Adaptation&quot;
                 </p>
                 <p style={{ color: 'rgba(255, 255, 255, 0.6)', fontSize: '0.7rem' }}>
                   Submitted in 2nd IEEE International Conference on Computational Intelligence, Communication Technology and Networking (CICTN) 2025, Ghaziabad, India

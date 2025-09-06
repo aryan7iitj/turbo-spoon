@@ -6,7 +6,6 @@ const Hero = () => {
   const [currentIcon, setCurrentIcon] = useState(0);
   const [typedText, setTypedText] = useState('');
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isVisible, setIsVisible] = useState(true);
   const heroRef = useRef<HTMLElement>(null);
   const particlesRef = useRef<HTMLDivElement>(null);
@@ -42,7 +41,7 @@ const Hero = () => {
       setCurrentIcon((prev) => (prev + 1) % icons.length);
     }, 2000);
     return () => clearInterval(interval);
-  }, []);
+  }, [icons.length]);
 
   // Visibility detection
   useEffect(() => {
@@ -106,8 +105,6 @@ const Hero = () => {
     const rect = heroRef.current.getBoundingClientRect();
     const x = (e.clientX - rect.left) / rect.width;
     const y = (e.clientY - rect.top) / rect.height;
-    
-    setMousePosition({ x: x - 0.5, y: y - 0.5 });
     
     // Apply 3D transformations based on mouse position
     const elements = heroRef.current.querySelectorAll('[data-3d]');
@@ -206,7 +203,7 @@ const Hero = () => {
               animation: isVisible ? 'fadeInUp 0.8s ease-out 0.2s both' : 'none'
             }}
           >
-            Hi, I'm{' '}
+            Hi, I&apos;m{' '}
             <span 
               className="gradient-text-animated"
               style={{
