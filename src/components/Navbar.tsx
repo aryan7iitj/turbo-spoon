@@ -127,8 +127,7 @@ export default function Navbar() {
       width: '100%',
       background: 'rgba(0, 0, 0, 0.2)',
       backdropFilter: 'blur(24px)',
-      zIndex: 50,
-      borderBottom: '1px solid rgba(255, 255, 255, 0.1)'
+      zIndex: 50
     }}>
       <div style={{ maxWidth: '80rem', margin: '0 auto', padding: '0 1rem' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: '5rem' }}>
