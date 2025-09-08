@@ -1,5 +1,6 @@
 'use client'
 
+import { useEffect, useState } from 'react'
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
@@ -9,12 +10,24 @@ import Contact from '@/components/Contact'
 import BackgroundElements from '@/components/BackgroundElements'
 
 export default function Home() {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <main style={{
       minHeight: '100vh',
-      background: 'linear-gradient(to bottom right, #0f172a, #581c87, #0f172a)',
+      background: `linear-gradient(${135 + scrollY * 0.01}deg, #0f172a, #581c87, #0f172a)`,
       position: 'relative',
-      overflow: 'hidden'
+      overflow: 'hidden',
+      transition: 'background 0.1s ease-out'
     }}>
       <BackgroundElements />
       <Navbar />

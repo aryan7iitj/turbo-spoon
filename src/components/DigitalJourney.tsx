@@ -142,33 +142,6 @@ const DigitalJourney = () => {
 
   return (
     <div style={{ minHeight: '100vh', padding: '2rem', position: 'relative' }}>
-      {/* Floating particles background */}
-      <div style={{
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        width: '100%',
-        height: '100%',
-        overflow: 'hidden',
-        zIndex: 0
-      }}>
-        {[...Array(20)].map((_, i) => (
-          <div
-            key={i}
-            style={{
-              position: 'absolute',
-              width: '4px',
-              height: '4px',
-              background: `hsl(${i * 18}, 70%, 60%)`,
-              borderRadius: '50%',
-              top: `${Math.random() * 100}%`,
-              left: `${Math.random() * 100}%`,
-              animation: `float ${3 + Math.random() * 4}s infinite ease-in-out`,
-              animationDelay: `${Math.random() * 2}s`
-            }}
-          />
-        ))}
-      </div>
 
       {/* Header */}
       <div style={{ 
@@ -538,12 +511,6 @@ const DigitalJourney = () => {
         </p>
       </div>
 
-      <style jsx>{`
-        @keyframes float {
-          0%, 100% { transform: translateY(0px) rotate(0deg); }
-          50% { transform: translateY(-20px) rotate(180deg); }
-        }
-      `}</style>
     </div>
   );
 };

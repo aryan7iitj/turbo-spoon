@@ -8,7 +8,6 @@ const Hero = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
   const heroRef = useRef<HTMLElement>(null);
-  const particlesRef = useRef<HTMLDivElement>(null);
   
   const icons = [FaCode, FaBrain, FaUsers, FaHeart];
   
@@ -64,37 +63,6 @@ const Hero = () => {
     return () => observer.disconnect();
   }, []);
 
-  // Particle system
-  useEffect(() => {
-    if (!particlesRef.current) return;
-
-    const createParticle = () => {
-      const particle = document.createElement('div');
-      particle.className = 'floating-particle';
-      particle.style.cssText = `
-        position: absolute;
-        width: ${Math.random() * 4 + 2}px;
-        height: ${Math.random() * 4 + 2}px;
-        background: linear-gradient(135deg, #667eea, #764ba2);
-        border-radius: 50%;
-        opacity: ${Math.random() * 0.6 + 0.2};
-        left: ${Math.random() * 100}%;
-        top: ${Math.random() * 100}%;
-        animation: floatParticle ${Math.random() * 10 + 10}s linear infinite;
-        pointer-events: none;
-        z-index: 1;
-      `;
-      
-      particlesRef.current?.appendChild(particle);
-      
-      setTimeout(() => {
-        particle.remove();
-      }, 15000);
-    };
-
-    const particleInterval = setInterval(createParticle, 300);
-    return () => clearInterval(particleInterval);
-  }, []);
 
   const CurrentIcon = icons[currentIcon];
 
@@ -145,16 +113,6 @@ const Hero = () => {
           perspective: '1000px'
         }}
       >
-        {/* Interactive Particles */}
-        <div ref={particlesRef} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} />
-        
-        {/* Floating Geometric Shapes */}
-        <div className="floating-shapes">
-          <div className="shape shape-1" />
-          <div className="shape shape-2" />
-          <div className="shape shape-3" />
-          <div className="shape shape-4" />
-        </div>
 
         <div style={{ textAlign: 'center', maxWidth: '80rem', margin: '0 auto', position: 'relative', zIndex: 10 }}>
           {/* Badge */}
@@ -382,95 +340,6 @@ const Hero = () => {
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4) !important;
           }
 
-          /* Floating Geometric Shapes */
-          .floating-shapes {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 1;
-          }
-
-          .shape {
-            position: absolute;
-            opacity: 0.1;
-            animation: floatShape 20s ease-in-out infinite;
-          }
-
-          .shape-1 {
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            border-radius: 50%;
-            top: 20%;
-            left: 10%;
-            animation-delay: 0s;
-          }
-
-          .shape-2 {
-            width: 40px;
-            height: 40px;
-            background: linear-gradient(135deg, #764ba2, #667eea);
-            border-radius: 8px;
-            top: 60%;
-            right: 15%;
-            animation-delay: 5s;
-          }
-
-          .shape-3 {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            border-radius: 50%;
-            bottom: 20%;
-            left: 20%;
-            animation-delay: 10s;
-          }
-
-          .shape-4 {
-            width: 50px;
-            height: 50px;
-            background: linear-gradient(135deg, #764ba2, #667eea);
-            border-radius: 12px;
-            top: 30%;
-            right: 30%;
-            animation-delay: 15s;
-          }
-
-          @keyframes floatShape {
-            0%, 100% {
-              transform: translateY(0px) rotate(0deg);
-            }
-            25% {
-              transform: translateY(-20px) rotate(90deg);
-            }
-            50% {
-              transform: translateY(-40px) rotate(180deg);
-            }
-            75% {
-              transform: translateY(-20px) rotate(270deg);
-            }
-          }
-
-          /* Particle Animations */
-          @keyframes floatParticle {
-            0% {
-              transform: translateY(100vh) scale(0);
-              opacity: 0;
-            }
-            10% {
-              opacity: 1;
-            }
-            90% {
-              opacity: 1;
-            }
-            100% {
-              transform: translateY(-100px) scale(1);
-              opacity: 0;
-            }
-          }
 
           /* Enhanced Animations */
           @keyframes fadeInUp {
@@ -562,10 +431,6 @@ const Hero = () => {
 
           /* Responsive adjustments */
           @media (max-width: 768px) {
-            .floating-shapes {
-              display: none;
-            }
-            
             .hero-3d-button {
               padding: 0.875rem 1.5rem;
               font-size: 1rem;
